@@ -1203,8 +1203,8 @@ class WhisperModel:
                 score = 0.0
                 if probability < 0.15:
                     score += 1.0
-                if duration < 0.133:
-                    score += (0.133 - duration) * 15
+                if duration < 0.033:
+                    score += (0.033 - duration) * 60
                 if duration > 2.0:
                     score += duration - 2.0
                 return score
